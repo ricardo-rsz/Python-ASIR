@@ -1,0 +1,2 @@
+Partida: 1 | Fallos: 3 | Puntuación: 700 puntos
+Partida: 1 | Fallos: 4 | Puntuación: 600 puntos
