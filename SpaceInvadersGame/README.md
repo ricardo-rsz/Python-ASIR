@@ -2,6 +2,8 @@ Two-Player Survival Game
 Game description
 This project is a two-player survival game developed with Python and Pygame. Both players must avoid the obstacles that fall from the top of the screen. Players earn points when obstacles pass off the bottom of the screen. As the shared score increases, the game becomes more difficult.
 
+https://github.com/user-attachments/assets/1710876c-b08a-457b-920f-6c905980db86
+
 The players share one score, but each player has their own position, lives, movement speed, and temporary effects.
 Requirements and installation
 You need Python 3 and the pygame-ce library.
