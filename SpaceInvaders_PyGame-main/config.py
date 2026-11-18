@@ -38,3 +38,8 @@ SCORES_FILE = "scores.txt"  # File where the scores are stored
 TOP_SCORES_COUNT = 5  # How many scores are shown on the start screen
 MAX_NAME_LENGTH = 12  # Maximum characters of a player name
 DEFAULT_PLAYER_NAME = "Player"  # Name saved when the player leaves it empty
+
+# Player Sprites
+PLAYER_IMAGE = "playerShip1_blue.png"  # Player 1 ship image
+PLAYER2_IMAGE = "playerShip1_orange.png"  # Player 2 ship image
+PLAYER_WIDTH =  60  #Width of the player ship image

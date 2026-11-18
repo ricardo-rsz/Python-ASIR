@@ -1,13 +1,17 @@
 
 import pygame
 from config import *
+from assets import load_image
+
+
 
 class Player:
     """The player controlled by the user"""
 
-    def __init__(self, x, y, color=PLAYER_COLOR, speed=PLAYER_SPEED):
-        """Initialize the player with a position and size"""
-        self.rect = pygame.Rect(x, y, 50, 50)
+    def __init__(self, x, y, color=PLAYER_COLOR, speed=PLAYER_SPEED, image_name=PLAYER_IMAGE):
+        """Initialize the player with a position and a ship image"""
+        self.image = load_image(image_name, width=PLAYER_WIDTH)
+        self.rect = self.image.get_rect(topleft=(x, y))
         self.start_position = (x, y)  # Remember the spawn point for restarts
         self.color = color
         self.speed = speed
@@ -123,6 +127,6 @@ class Player:
         # Blink only for the post-hit invulnerability; the shield is shown with an outline instead
         if now < self.invulnerable_until and (now // BLINK_INTERVAL) % 2 == 0:
             return  # Skip drawing on alternate intervals to create a blink effect
-        pygame.draw.rect(surface, self.color, self.rect)
+        surface.blit(self.image, self.rect)
         if self.has_shield(now):
             pygame.draw.rect(surface, (255, 255, 255), self.rect.inflate(12, 12), 3)
