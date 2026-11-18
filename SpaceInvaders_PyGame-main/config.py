@@ -47,3 +47,8 @@ PLAYER_WIDTH =  60  #Width of the player ship image
 # Meteor Sprites
 METEOR_IMAGES = ["meteorBrown_big1.png", "meteorBrown_big2.png", "meteorBrown_big3.png",
                 "meteorGrey_big1.png", "meteorGrey_big2.png", "meteorGrey_big3.png"]  # List of meteor images
+
+# Power-up Sprites
+SPEED_POWERUP_IMAGE = "powerupYellow_bolt.png"
+LIFE_POWERUP_IMAGE = "pill_green.png"
+SHIELD_POWERUP_IMAGE = "powerupBlue_shield.png"
