@@ -43,3 +43,7 @@ DEFAULT_PLAYER_NAME = "Player"  # Name saved when the player leaves it empty
 PLAYER_IMAGE = "playerShip1_blue.png"  # Player 1 ship image
 PLAYER2_IMAGE = "playerShip1_orange.png"  # Player 2 ship image
 PLAYER_WIDTH =  60  #Width of the player ship image
+
+# Meteor Sprites
+METEOR_IMAGES = ["meteorBrown_big1.png", "meteorBrown_big2.png", "meteorBrown_big3.png",
+                "meteorGrey_big1.png", "meteorGrey_big2.png", "meteorGrey_big3.png"]  # List of meteor images
